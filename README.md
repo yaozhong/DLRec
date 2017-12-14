@@ -1,6 +1,10 @@
-# DLRec
+# DLRec 
 
 DLRec is a deep learning based approach to reconstruce high read-depth signals from low depth WGS data.
+The details can be referred to the paper **Reconstruction of high read-depth singals from low-depth whole genome sequencing 
+data using deep learning**
+
+
 
 ## Enviroment
 The implementation used Chainer as the backend deep learning toolkit. 
