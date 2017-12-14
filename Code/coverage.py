@@ -2,13 +2,10 @@
 
 """
 Date:       2017-07-08
-Author:     Yao-zhong Zhang
+Author:     Yao-zhong Zhang@imsut
 Descrption:
 Given accessible regions of chrome AR(chr, start, end)
 calculate the the coverage for the target AR based on bam file 
-
-Note: iterate based on reads {fetch} based approach  is not slow.
-
 """
 
 import logging
@@ -25,10 +22,6 @@ def getReadDepth_test(region, bamfile, min_mapq=20):
 	for pColumn in pileup:
 		if pColumn.pos >= region[1] and pColumn.pos <= region[2]:
 			rc[pColumn.pos - region[1]] = pColumn.nsegments 
-
-
-# revise your aglorithm to get a smoothed version of rc
-
 
 def getARcoverage_rc(region, samfile, min_mapq=20):
 
