@@ -3,9 +3,8 @@
 """
 Author: Yao-zhong Zhang @ IMSUT
 Date:   2017-08-08 
-version: 0.03
-Revised version for the data generation process.
-This include the option that incorporate different features
+Description: The data generation process.
+This include the option that incorporate different biological knowledge features.
 
 """
 import pyfaidx
