@@ -127,22 +127,4 @@ def seq2onehotMat(seq, sbin):
 			vecSmooth(res[2,:],sbin), vecSmooth(res[3,:], sbin)))
 		return sr
 
-def getRegionGC1():
 
-	file = "/data/Dataset/1000GP/reference/GC/gc5Base.bigWig"
-	gcBW = pyBigWig.open(file)
-	value = gcBW.values('chrX', 10788674, 10788694)
-	print(value)
-	np.array([value, value])
-
-def getRegionMap1():
-
-	file = "/data/Dataset/1000GP/reference/mappability/wgEncodeCrgMapabilityAlign100mer.bigWig"
-	gcBW = pyBigWig.open(file)
-	value = gcBW.values('chr1', 10788674, 10788694)
-	print(value)
-	np.array(value)
-
-if __name__ == "__main__":
-	getRegionMap1()
-	getRegionGC1()
