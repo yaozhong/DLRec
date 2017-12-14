@@ -72,8 +72,7 @@ def test_region(rg=None):
 	p2, = plt.plot(idx, T.reshape(n,), color="red")
 	p3, = plt.plot(idx, Y.reshape(n,), color="blue")
 	plt.legend([p1,p2,p3], ["low-depth", "high-depth", "Reconstructed"])
-	#plt.ylim(0,100)
-	#plt.xlim([0,6000])
+
 	if not os.path.exists("./"+args.out):
 		os.makedirs("./"+args.out)
 	plt.savefig("./"+args.out+"/reconstruction_"+outFileName+".png")
